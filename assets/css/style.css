@@ -1,3 +1,26 @@
 body {
-    background-color: beige;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
 }
+
+#contenido {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+#header {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: stretch;
+}
+
