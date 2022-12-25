@@ -81,8 +81,19 @@ h1 {
 
 }
 
+@media screen and (max-width: 1200px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+    }
 
+  }
 /* Button */
+
 .dropbtn {
     background-color: bisque;
     color: brown;
@@ -134,7 +145,12 @@ h1 {
     margin-left: 5cm;
 
     }
-
+    @media only screen and (max-width: 600px) {
+        .img {
+          display:flex;
+        }
+      }
+      
     #imagen1 {
         display: grid;
         grid-template-columns: 100%;
@@ -159,9 +175,10 @@ h1 {
     text-align: end;
 }
 
+
 .footer {
     text-align: center ;
-    font-size: 1ch;
+    font-size: 25px;
 }
 
  /* Segunda pagina */
