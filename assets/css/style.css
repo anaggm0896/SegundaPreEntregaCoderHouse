@@ -178,7 +178,22 @@ h1 {
 
 .footer {
     text-align: center ;
-    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: burlywood;
+    font-size: 15px;
 }
 
- /* Segunda pagina */
+ /* Bungalows pagina */
+
+ #main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+.col {
+    color: brown;
+}
