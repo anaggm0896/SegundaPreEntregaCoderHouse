@@ -1,18 +1,17 @@
 body {
     margin: 0;
+    margin-top: 1cm;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: white;
+    width: 100%;
+    
+}
+.simple-linear {
+    background: linear-gradient(white, beige);
 }
 
-#contenido {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer";
+h1 {
+    font-family: "Times New Roman", Times, serif;
 }
 
 /* Logo y Nombre */ 
@@ -24,43 +23,87 @@ body {
 	align-items: flex-start;
 	align-content: stretch;
 }
+/* Boton de reservar */ 
 
+.button {
+    border-radius: 4px;
+    background-color: bisque;
+    border: none;
+    color: brown;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 /* menu de navegación*/ 
 
 .nav {
-	justify-self: end;
+    justify-content: flex-end;
+   
 }
 
 .barra {
+    list-style: none;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: flex-start;
 	align-content: stretch;
+
 }
 
 
 /* Button */
 .dropbtn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: bisque;
+    color: brown;
     padding: 16px;
     font-size: 16px;
     border: none;
+    width: 160px;
   }
   
   /* Dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
+
   }
   
   /* Dropdown Content (Oculto) */
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color:  bisque;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -68,10 +111,12 @@ body {
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: brown;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    
+
   }
   
   /* Color en hover */
@@ -81,10 +126,36 @@ body {
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Background color en sub */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: beige;}
 
   /* Imagen */
 
-  .img {
-    align-items: center;
-  }
+  .img   {
+    margin-left: 5cm;
+
+    }
+
+    #imagen1 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 3inch 12inch 3 inch;
+        grid-template-areas: 
+        "img"
+        "na"
+        "video";
+    }
+  /* Video */
+
+    .video {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+    }
+
+.texto {
+    text-align: end;
+
+}
