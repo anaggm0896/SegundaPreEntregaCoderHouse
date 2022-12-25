@@ -157,5 +157,11 @@ h1 {
 
 .texto {
     text-align: end;
-
 }
+
+.footer {
+    text-align: center ;
+    font-size: 1ch;
+}
+
+ /* Segunda pagina */
