@@ -223,3 +223,30 @@ h1 {
 .f2 {
     margin-top: 2cm;
 }
+
+ /* Golf pagina */
+
+@media screen and (max-width: 1400px) {
+    #conteiner
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    #conteiner{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+    }
+  }
+
